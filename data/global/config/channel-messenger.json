@@ -1,0 +1,8 @@
+{
+  "$schema": "../../assets/modules/channel-messenger/config.schema.json",
+  "enabled": false,
+  "appSecret": "app_secret",
+  "verifyToken": "verify_token",
+  "persistentMenu": [],
+  "chatUserAuthDuration": "24h"
+}

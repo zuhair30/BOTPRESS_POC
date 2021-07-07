@@ -1,0 +1,21 @@
+{
+  "$schema": "../../assets/modules/basic-skills/config.schema.json",
+  "defaultContentElement": "builtin_single-choice",
+  "defaultContentRenderer": "#builtin_single-choice",
+  "defaultMaxAttempts": 3,
+  "disableIntegrityCheck": true,
+  "matchNumbers": true,
+  "matchNLU": true,
+   "transportConnectionString":  {
+
+	"host": "smtp.gmail.com",
+    "port":"587",
+    "auth": {
+      "user": "zuhair30@gmail.com"
+      "pass": "SamaN&3997"
+    },
+    "secure": false,
+    "tls": {
+      "rejectUnauthorized": false
+    }
+  }}

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "builtin_image-RkWYi1",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/empty-bot-test/media/sp0yxkvlbcqq45v51ukr-Enterpriseyjpg.jpg",
+      "title$en": "Alchemy"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-02T04:21:38.221Z",
+    "modifiedOn": "2021-03-02T05:40:24.186Z"
+  }
+]

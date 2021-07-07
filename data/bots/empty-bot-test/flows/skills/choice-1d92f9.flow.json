@@ -1,0 +1,97 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "v8s3bmif0x",
+    "contentId": "builtin_single-choice-lBEDWy",
+    "invalidContentId": "",
+    "keywords": {
+      "Help on Wiki": [
+        "Help on Wiki"
+      ],
+      "Help on TCS process": [
+        "Help on TCS process"
+      ],
+      "Help on EA Information Exch": [
+        "Help on EA Information Exch"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-lBEDWy {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "243327"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"v8s3bmif0x\",\"contentId\":\"builtin_single-choice-lBEDWy\",\"invalidContentId\":\"\",\"keywords\":{\"Help on Wiki\":[\"Help on Wiki\"],\"Help on TCS process\":[\"Help on TCS process\"],\"Help on EA Information Exch\":[\"Help on EA Information Exch\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-v8s3bmif0x'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "191551"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"v8s3bmif0x\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-v8s3bmif0x']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "537774"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "240314"
+    }
+  ]
+}

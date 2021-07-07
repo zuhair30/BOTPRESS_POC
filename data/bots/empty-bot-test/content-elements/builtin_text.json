@@ -1,0 +1,115 @@
+[
+  {
+    "id": "builtin_text-JkMYZ1",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Hello I Am EA Bot Welcome to EnterPrise Agility Help"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-02T04:16:58.161Z",
+    "modifiedOn": "2021-03-02T05:22:25.965Z"
+  },
+  {
+    "id": "builtin_text-ss2RyT",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Hope you had a nice day ..!!!"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-02T04:18:47.169Z",
+    "modifiedOn": "2021-03-02T05:29:23.575Z"
+  },
+  {
+    "id": "builtin_text-YoNNGY",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Hope you had a Great Day"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-02T04:38:32.687Z",
+    "modifiedOn": "2021-03-02T04:38:32.687Z"
+  },
+  {
+    "id": "builtin_text-vSR4vs",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "What's Your Good Name"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-02T04:52:24.336Z",
+    "modifiedOn": "2021-03-02T04:52:24.336Z"
+  },
+  {
+    "id": "builtin_text-esEwCx",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Nice to meet you {{yourname}}"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-02T05:03:22.739Z",
+    "modifiedOn": "2021-03-02T05:05:38.470Z"
+  },
+  {
+    "id": "builtin_text-p1QBys",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Nice to meet you {{user.nickname}}"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-02T05:10:12.800Z",
+    "modifiedOn": "2021-03-02T05:10:12.800Z"
+  },
+  {
+    "id": "builtin_text-ZpYkRv",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Good to hear youare felling great",
+      "variations$en": [
+        ""
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-02T05:43:39.172Z",
+    "modifiedOn": "2021-03-24T06:32:41.913Z"
+  },
+  {
+    "id": "builtin_text-EIfSB4",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Arghhh Sorry to hear that but there is always silver lining"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-02T05:44:40.487Z",
+    "modifiedOn": "2021-03-02T05:44:40.487Z"
+  },
+  {
+    "id": "builtin_text-NZgft5",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "What help you require from me"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-02T05:48:16.511Z",
+    "modifiedOn": "2021-03-02T05:48:16.511Z"
+  },
+  {
+    "id": "builtin_text-6CFVwK",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "this is bot testing"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-15T06:06:07.869Z",
+    "modifiedOn": "2021-03-15T06:06:07.869Z"
+  }
+]

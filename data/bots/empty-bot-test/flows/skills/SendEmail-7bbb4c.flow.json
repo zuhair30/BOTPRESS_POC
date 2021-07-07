@@ -1,0 +1,30 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "fromAddress": "zuhair30@gmail.com",
+    "toAddress": "fatimazaina22@gmail.com",
+    "ccAddress": "zuhair30@gmail.com",
+    "bccAddress": "",
+    "subjectElement": "builtin_text-ZpYkRv",
+    "contentElement": "builtin_text-6CFVwK"
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "basic-skills/send_email {\"fromAddress\":\"zuhair30@gmail.com\",\"toAddress\":\"fatimazaina22@gmail.com\",\"ccAddress\":\"zuhair30@gmail.com\",\"bccAddress\":\"\",\"subjectElement\":\"builtin_text-ZpYkRv\",\"contentElement\":\"builtin_text-6CFVwK\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "#"
+        }
+      ],
+      "id": "095533"
+    }
+  ]
+}

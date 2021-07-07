@@ -1,0 +1,171 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Namenode"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-JkMYZ1",
+        "say #!builtin_image-RkWYi1"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "a72123aa16",
+      "name": "Namenode",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Moodchoice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-vSR4vs"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"nickname\",\"value\":\"{{event.payload.text}}\"}",
+        "say #!builtin_text-p1QBys"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "skill-22ef9f",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "Moodchoice",
+      "flow": "skills/choice-22ef9f.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Great]",
+          "condition": "temp['skill-choice-ret-rmsbn3hvpe'] == \"Great\"",
+          "node": "Goodnode"
+        },
+        {
+          "caption": "User picked [Not good]",
+          "condition": "temp['skill-choice-ret-rmsbn3hvpe'] == \"Not good\"",
+          "node": "Badnode"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "84b46184d7",
+      "name": "Goodnode",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Options_for_EA"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-ZpYkRv"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "4b078fac5a",
+      "name": "Badnode",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-EIfSB4"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "1ea70dbd03",
+      "name": "Options_for_EA",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-1d92f9"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-NZgft5"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-1d92f9",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-1d92f9",
+      "flow": "skills/choice-1d92f9.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Help on...]",
+          "condition": "temp['skill-choice-ret-v8s3bmif0x'] == \"Help on Wiki\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [Help on...]",
+          "condition": "temp['skill-choice-ret-v8s3bmif0x'] == \"Help on TCS process\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [Help on...]",
+          "condition": "temp['skill-choice-ret-v8s3bmif0x'] == \"Help on EA Information Exch\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-7bbb4c",
+      "type": "skill-call",
+      "skill": "SendEmail",
+      "name": "SendEmail-7bbb4c",
+      "flow": "skills/SendEmail-7bbb4c.flow.json",
+      "next": [
+        {
+          "caption": "On success",
+          "condition": "temp.success",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "!temp.success",
+          "node": "node-2956"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "a58f315234",
+      "name": "node-2956",
+      "next": [],
+      "onEnter": [],
+      "onReceive": [
+        "say #!builtin_text-6CFVwK"
+      ],
+      "type": "standard"
+    }
+  ]
+}

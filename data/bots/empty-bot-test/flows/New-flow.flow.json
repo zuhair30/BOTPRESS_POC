@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "triggers": [],
+  "description": "",
+  "nodes": [
+    {
+      "id": "d124c28257",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [],
+      "type": "standard"
+    }
+  ]
+}
